@@ -1,10 +1,13 @@
-package edu.teamrocket;
+package edu.teamrocket.golfstrokes;
 
 /**
  * Hello world!
  */
 public class App {
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+
+        Hole hole = new Hole((byte) 7, (byte) 4);
+        
+        System.out.println(hole);
     }
 }
