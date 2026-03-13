@@ -25,4 +25,9 @@ class PlayerTest {
         assertEquals("MJ", playerMJ.getInitials());
         assertEquals((byte) 0, playerMJ.getHandicap());
     }
+
+    @Test
+    void getPointsReturnZero() {
+        assertEquals((short) 0, playerMJ.getPoints());
+    }  
 }

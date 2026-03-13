@@ -18,5 +18,9 @@ class Player extends Object {
 
     Byte getHandicap() {
         return this.handicap;
-    }   
+    }
+    
+    Short getPoints() {
+        return this.points;
+    }
 }
