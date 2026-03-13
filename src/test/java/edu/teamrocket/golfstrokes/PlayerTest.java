@@ -8,15 +8,20 @@ import org.junit.jupiter.api.Test;
 
 class PlayerTest {
     
+    private Player playerMJ;
+
+    @BeforeEach
+    void setUp() {
+        playerMJ = new Player("MJ", (byte) 0);
+    }
+
     @Test
     void constructorCreatesPlayerObject() {
-        Player playerMJ = new Player("MJ", (byte) 0);
         assertNotNull(playerMJ);        
     }
 
     @Test 
     void constructorGetsNameAndStrokes() {
-        Player playerMJ = new Player("MJ", (byte) 0);
         assertEquals("MJ", playerMJ.getInitials());
         assertEquals((byte) 0, playerMJ.getHandicap());
     }
