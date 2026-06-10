@@ -20,6 +20,6 @@ class Hole extends Object{
 
     @Override
     public String toString() {
-        return "Hole " + this.number + " (par " + this.par + ")";
+        return "Hole " + this.number + " (par: " + this.par + ")";
     }
 }

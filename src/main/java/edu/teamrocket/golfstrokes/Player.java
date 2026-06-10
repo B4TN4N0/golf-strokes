@@ -12,15 +12,20 @@ class Player extends Object {
         this.handicap = strokes;
     }
 
-    String getInitials() {
+    public String getInitials() {
         return this.initials;
     }
 
-    Byte getHandicap() {
+    public Byte getHandicap() {
         return this.handicap;
     }
-    
-    Short getPoints() {
+
+    public Short getPoints() {
         return this.points;
+    }
+
+    @Override
+    public String toString(){
+        return (initials + " ---> H'cap: " + handicap + "   Strokes: " + score +"   Stableford points: " + points);
     }
 }
